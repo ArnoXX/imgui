@@ -7,11 +7,14 @@ project "imgui"
     files {
         "%{prj.location}/*.cpp",
         "%{prj.location}/*.h",
-        "%{prj.location}/backends/*.cpp",
-        "%{prj.location}/backends/*.h",
+        "%{prj.location}/backends/imgui_impl_opengl3.cpp",
+        "%{prj.location}/backends/imgui_impl_glfw.cpp",
+        "%{prj.location}/backends/imgui_impl_opengl3.h",
+        "%{prj.location}/backends/imgui_impl_glfw.h",
         "%{prj.location}/misc/debuggers/imgui.natstepfilter",
         "%{prj.location}/misc/debuggers/imgui.natvis",
-        "%{prj.location}/misc/cpp/imgui_stdlib.*"
+        "%{prj.location}/misc/cpp/imgui_stdlib.*",
+        ""
     }
 
     includedirs { "%{prj.location}/", "%{prj.location}/backends", "%{prj.location}/examples/libs/glfw/include" }
